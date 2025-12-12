@@ -1,0 +1,92 @@
+[0.000000] (-) TimerEvent: {}
+[0.001651] (-) JobUnselected: {'identifier': 'joint_state_publisher'}
+[0.002169] (-) JobUnselected: {'identifier': 'joint_state_publisher_gui'}
+[0.002355] (-) JobUnselected: {'identifier': 'my_robot'}
+[0.002653] (-) JobUnselected: {'identifier': 'pico_odom'}
+[0.002811] (robot_nav) JobQueued: {'identifier': 'robot_nav', 'dependencies': OrderedDict()}
+[0.002907] (robot_nav) JobStarted: {'identifier': 'robot_nav'}
+[0.098730] (-) TimerEvent: {}
+[0.199477] (-) TimerEvent: {}
+[0.300358] (-) TimerEvent: {}
+[0.401131] (-) TimerEvent: {}
+[0.501794] (-) TimerEvent: {}
+[0.602455] (-) TimerEvent: {}
+[0.703076] (-) TimerEvent: {}
+[0.803703] (-) TimerEvent: {}
+[0.904341] (-) TimerEvent: {}
+[1.004986] (-) TimerEvent: {}
+[1.105644] (-) TimerEvent: {}
+[1.206293] (-) TimerEvent: {}
+[1.306976] (-) TimerEvent: {}
+[1.407756] (-) TimerEvent: {}
+[1.509433] (-) TimerEvent: {}
+[1.611179] (-) TimerEvent: {}
+[1.711923] (-) TimerEvent: {}
+[1.812636] (-) TimerEvent: {}
+[1.913314] (-) TimerEvent: {}
+[2.014082] (-) TimerEvent: {}
+[2.114752] (-) TimerEvent: {}
+[2.215407] (-) TimerEvent: {}
+[2.316019] (-) TimerEvent: {}
+[2.416624] (-) TimerEvent: {}
+[2.517263] (-) TimerEvent: {}
+[2.617929] (-) TimerEvent: {}
+[2.718615] (-) TimerEvent: {}
+[2.819250] (-) TimerEvent: {}
+[2.920049] (-) TimerEvent: {}
+[3.021284] (-) TimerEvent: {}
+[3.122005] (-) TimerEvent: {}
+[3.222859] (-) TimerEvent: {}
+[3.323916] (-) TimerEvent: {}
+[3.349496] (robot_nav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/rubiores/Documents/PAE/build/robot_nav/build', '--no-deps', 'symlink_data'], 'cwd': '/home/rubiores/Documents/PAE/build/robot_nav', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rubiores', 'SSH_CLIENT': '192.168.0.100 55407 22', 'LC_TIME': 'es_CO.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/rubiores', 'OLDPWD': '/home/rubiores', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'es_CO.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rubiores/Documents/PAE/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'rubiores', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '22', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/rubiores/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'es_CO.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:12.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'es_CO.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/rubiores/Documents/PAE/install/robot_nav:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_CO.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_CO.UTF-8', 'LC_IDENTIFICATION': 'es_CO.UTF-8', 'PWD': '/home/rubiores/Documents/PAE/build/robot_nav', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.100 55407 192.168.0.103 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rubiores/Documents/PAE/build/robot_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages:/home/rubiores/Documents/PAE/build/robot_nav:/home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_CO.UTF-8', 'LC_PAPER': 'es_CO.UTF-8', 'COLCON': '1'}, 'shell': False}
+[3.424059] (-) TimerEvent: {}
+[3.524798] (-) TimerEvent: {}
+[3.625479] (-) TimerEvent: {}
+[3.726140] (-) TimerEvent: {}
+[3.826820] (-) TimerEvent: {}
+[3.927551] (-) TimerEvent: {}
+[4.028253] (-) TimerEvent: {}
+[4.128903] (-) TimerEvent: {}
+[4.229516] (-) TimerEvent: {}
+[4.330130] (-) TimerEvent: {}
+[4.430757] (-) TimerEvent: {}
+[4.531381] (-) TimerEvent: {}
+[4.632051] (-) TimerEvent: {}
+[4.732670] (-) TimerEvent: {}
+[4.783252] (robot_nav) StdoutLine: {'line': b'running develop\n'}
+[4.832853] (-) TimerEvent: {}
+[4.933465] (-) TimerEvent: {}
+[5.034119] (-) TimerEvent: {}
+[5.134792] (-) TimerEvent: {}
+[5.235401] (-) TimerEvent: {}
+[5.336053] (-) TimerEvent: {}
+[5.436709] (-) TimerEvent: {}
+[5.537381] (-) TimerEvent: {}
+[5.638053] (-) TimerEvent: {}
+[5.738694] (-) TimerEvent: {}
+[5.839347] (-) TimerEvent: {}
+[5.881828] (robot_nav) StdoutLine: {'line': b'running egg_info\n'}
+[5.882654] (robot_nav) StdoutLine: {'line': b'writing robot_nav.egg-info/PKG-INFO\n'}
+[5.883794] (robot_nav) StdoutLine: {'line': b'writing dependency_links to robot_nav.egg-info/dependency_links.txt\n'}
+[5.884754] (robot_nav) StdoutLine: {'line': b'writing entry points to robot_nav.egg-info/entry_points.txt\n'}
+[5.885666] (robot_nav) StdoutLine: {'line': b'writing requirements to robot_nav.egg-info/requires.txt\n'}
+[5.886348] (robot_nav) StdoutLine: {'line': b'writing top-level names to robot_nav.egg-info/top_level.txt\n'}
+[5.895689] (robot_nav) StdoutLine: {'line': b"reading manifest file 'robot_nav.egg-info/SOURCES.txt'\n"}
+[5.901187] (robot_nav) StdoutLine: {'line': b"writing manifest file 'robot_nav.egg-info/SOURCES.txt'\n"}
+[5.907119] (robot_nav) StdoutLine: {'line': b'running build_ext\n'}
+[5.908000] (robot_nav) StdoutLine: {'line': b'Creating /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot-nav.egg-link (link to .)\n'}
+[5.912029] (robot_nav) StdoutLine: {'line': b'Installing lidar_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[5.912893] (robot_nav) StdoutLine: {'line': b'Installing motor_controller script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[5.913754] (robot_nav) StdoutLine: {'line': b'Installing pico_bridge script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[5.914587] (robot_nav) StdoutLine: {'line': b'Installing pico_odom_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[5.915549] (robot_nav) StdoutLine: {'line': b'Installing simple_nav script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[5.916414] (robot_nav) StdoutLine: {'line': b'Installing teleop_keyboard script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[5.917743] (robot_nav) StdoutLine: {'line': b'\n'}
+[5.918319] (robot_nav) StdoutLine: {'line': b'Installed /home/rubiores/Documents/PAE/build/robot_nav\n'}
+[5.918850] (robot_nav) StdoutLine: {'line': b'running symlink_data\n'}
+[5.939611] (-) TimerEvent: {}
+[6.040740] (-) TimerEvent: {}
+[6.087665] (robot_nav) CommandEnded: {'returncode': 0}
+[6.141989] (-) TimerEvent: {}
+[6.152012] (robot_nav) JobEnded: {'identifier': 'robot_nav', 'rc': 0}
+[6.157377] (-) EventReactorShutdown: {}

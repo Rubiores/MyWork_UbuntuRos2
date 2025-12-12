@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing robot_nav.egg-info/PKG-INFO
+writing dependency_links to robot_nav.egg-info/dependency_links.txt
+writing entry points to robot_nav.egg-info/entry_points.txt
+writing requirements to robot_nav.egg-info/requires.txt
+writing top-level names to robot_nav.egg-info/top_level.txt
+reading manifest file 'robot_nav.egg-info/SOURCES.txt'
+writing manifest file 'robot_nav.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot-nav.egg-link (link to .)
+Installing lidar_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+Installing motor_controller script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+Installing pico_bridge script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+Installing pico_odom_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+Installing simple_nav script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+Installing teleop_keyboard script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+
+Installed /home/rubiores/Documents/PAE/build/robot_nav
+running symlink_data

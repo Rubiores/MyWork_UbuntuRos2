@@ -1,0 +1,21 @@
+[3.926s] Invoking command in '/home/rubiores/Documents/PAE/build/robot_nav': PYTHONPATH=/home/rubiores/Documents/PAE/build/robot_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rubiores/Documents/PAE/build/robot_nav/build --no-deps symlink_data
+[5.575s] running develop
+[6.890s] running egg_info
+[6.890s] writing robot_nav.egg-info/PKG-INFO
+[6.892s] writing dependency_links to robot_nav.egg-info/dependency_links.txt
+[6.892s] writing entry points to robot_nav.egg-info/entry_points.txt
+[6.893s] writing requirements to robot_nav.egg-info/requires.txt
+[6.894s] writing top-level names to robot_nav.egg-info/top_level.txt
+[6.904s] reading manifest file 'robot_nav.egg-info/SOURCES.txt'
+[6.911s] writing manifest file 'robot_nav.egg-info/SOURCES.txt'
+[6.917s] running build_ext
+[6.919s] Creating /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot-nav.egg-link (link to .)
+[6.922s] Installing lidar_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+[6.923s] Installing motor_controller script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+[6.924s] Installing pico_bridge script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+[6.925s] Installing pico_odom_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+[6.927s] Installing teleop_keyboard script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+[6.929s] 
+[6.929s] Installed /home/rubiores/Documents/PAE/build/robot_nav
+[6.930s] running symlink_data
+[7.125s] Invoked command in '/home/rubiores/Documents/PAE/build/robot_nav' returned '0': PYTHONPATH=/home/rubiores/Documents/PAE/build/robot_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rubiores/Documents/PAE/build/robot_nav/build --no-deps symlink_data

@@ -1,0 +1,8 @@
+[console_scripts]
+lidar_node = robot_nav.lidar_node:main
+motor_controller = robot_nav.motor_controller:main
+pico_bridge = robot_nav.pico_bridge:main
+pico_odom_node = robot_nav.pico_odom_node:main
+simple_nav = robot_nav.simple_nav:main
+teleop_keyboard = robot_nav.teleop_keyboard:main
+

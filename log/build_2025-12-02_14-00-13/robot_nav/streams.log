@@ -1,0 +1,46 @@
+[3.329s] Invoking command in '/home/rubiores/Documents/PAE/build/robot_nav': PYTHONPATH=/home/rubiores/Documents/PAE/build/robot_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rubiores/Documents/PAE/build/robot_nav/build --no-deps symlink_data
+[4.755s] running develop
+[5.847s] running egg_info
+[5.847s] creating robot_nav.egg-info
+[5.848s] writing robot_nav.egg-info/PKG-INFO
+[5.849s] writing dependency_links to robot_nav.egg-info/dependency_links.txt
+[5.849s] writing entry points to robot_nav.egg-info/entry_points.txt
+[5.850s] writing requirements to robot_nav.egg-info/requires.txt
+[5.850s] writing top-level names to robot_nav.egg-info/top_level.txt
+[5.852s] writing manifest file 'robot_nav.egg-info/SOURCES.txt'
+[5.859s] reading manifest file 'robot_nav.egg-info/SOURCES.txt'
+[5.863s] writing manifest file 'robot_nav.egg-info/SOURCES.txt'
+[5.868s] running build_ext
+[5.869s] Creating /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot-nav.egg-link (link to .)
+[5.872s] Installing lidar_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+[5.873s] Installing motor_controller script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+[5.874s] Installing pico_bridge script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+[5.875s] Installing pico_odom_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+[5.875s] Installing teleop_keyboard script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+[5.876s] 
+[5.877s] Installed /home/rubiores/Documents/PAE/build/robot_nav
+[5.877s] running symlink_data
+[5.878s] creating /home/rubiores/Documents/PAE/install/robot_nav/share/ament_index
+[5.878s] creating /home/rubiores/Documents/PAE/install/robot_nav/share/ament_index/resource_index
+[5.879s] creating /home/rubiores/Documents/PAE/install/robot_nav/share/ament_index/resource_index/packages
+[5.879s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/resource/robot_nav -> /home/rubiores/Documents/PAE/install/robot_nav/share/ament_index/resource_index/packages
+[5.880s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/package.xml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav
+[5.880s] creating /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+[5.881s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/launch/localization.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+[5.881s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/launch/slam.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+[5.882s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/launch/motor_controller.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+[5.882s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/launch/lidar.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+[5.883s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/launch/bringup.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+[5.883s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/launch/pico_bridge.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+[5.884s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/launch/description.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+[5.884s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/launch/navigation.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+[5.884s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/launch/teleop.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+[5.885s] creating /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/urdf
+[5.885s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/urdf/robot.urdf.xacro -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/urdf
+[5.886s] creating /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+[5.886s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/config/localization_params.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+[5.887s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/config/nav2_params.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+[5.887s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/config/mapper_params.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+[5.888s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/config/rviz_config.rviz -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+[5.889s] symbolically linking /home/rubiores/Documents/PAE/build/robot_nav/config/robot_control.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+[6.043s] Invoked command in '/home/rubiores/Documents/PAE/build/robot_nav' returned '0': PYTHONPATH=/home/rubiores/Documents/PAE/build/robot_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rubiores/Documents/PAE/build/robot_nav/build --no-deps symlink_data

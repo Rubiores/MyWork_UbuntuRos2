@@ -1,0 +1,150 @@
+[0.000000] (-) TimerEvent: {}
+[0.001671] (-) JobUnselected: {'identifier': 'joint_state_publisher'}
+[0.002188] (-) JobUnselected: {'identifier': 'joint_state_publisher_gui'}
+[0.002371] (-) JobUnselected: {'identifier': 'my_robot'}
+[0.002629] (-) JobUnselected: {'identifier': 'pico_odom'}
+[0.002793] (robot_nav) JobQueued: {'identifier': 'robot_nav', 'dependencies': OrderedDict()}
+[0.002900] (robot_nav) JobStarted: {'identifier': 'robot_nav'}
+[0.098654] (-) TimerEvent: {}
+[0.199420] (-) TimerEvent: {}
+[0.300159] (-) TimerEvent: {}
+[0.400988] (-) TimerEvent: {}
+[0.501671] (-) TimerEvent: {}
+[0.602285] (-) TimerEvent: {}
+[0.702905] (-) TimerEvent: {}
+[0.803556] (-) TimerEvent: {}
+[0.904271] (-) TimerEvent: {}
+[1.004890] (-) TimerEvent: {}
+[1.105521] (-) TimerEvent: {}
+[1.206176] (-) TimerEvent: {}
+[1.306795] (-) TimerEvent: {}
+[1.407603] (-) TimerEvent: {}
+[1.508721] (-) TimerEvent: {}
+[1.610153] (-) TimerEvent: {}
+[1.710930] (-) TimerEvent: {}
+[1.811863] (-) TimerEvent: {}
+[1.912544] (-) TimerEvent: {}
+[2.013184] (-) TimerEvent: {}
+[2.113836] (-) TimerEvent: {}
+[2.214526] (-) TimerEvent: {}
+[2.315144] (-) TimerEvent: {}
+[2.415751] (-) TimerEvent: {}
+[2.516450] (-) TimerEvent: {}
+[2.617094] (-) TimerEvent: {}
+[2.717767] (-) TimerEvent: {}
+[2.818416] (-) TimerEvent: {}
+[2.919258] (-) TimerEvent: {}
+[3.020333] (-) TimerEvent: {}
+[3.121084] (-) TimerEvent: {}
+[3.221872] (-) TimerEvent: {}
+[3.322967] (-) TimerEvent: {}
+[3.345755] (robot_nav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/rubiores/Documents/PAE/build/robot_nav/build'], 'cwd': '/home/rubiores/Documents/PAE/build/robot_nav', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rubiores', 'SSH_CLIENT': '192.168.1.3 60003 22', 'LC_TIME': 'es_CO.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/rubiores', 'OLDPWD': '/home/rubiores', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'es_CO.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rubiores/Documents/PAE/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'rubiores', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/rubiores/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'es_CO.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'es_CO.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/rubiores/Documents/PAE/install/robot_nav:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_CO.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_CO.UTF-8', 'LC_IDENTIFICATION': 'es_CO.UTF-8', 'PWD': '/home/rubiores/Documents/PAE/build/robot_nav', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.3 60003 192.168.1.9 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rubiores/Documents/PAE/build/robot_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages:/home/rubiores/Documents/PAE/build/robot_nav:/home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_CO.UTF-8', 'LC_PAPER': 'es_CO.UTF-8', 'COLCON': '1'}, 'shell': False}
+[3.423120] (-) TimerEvent: {}
+[3.523870] (-) TimerEvent: {}
+[3.624627] (-) TimerEvent: {}
+[3.725494] (-) TimerEvent: {}
+[3.826133] (-) TimerEvent: {}
+[3.926767] (-) TimerEvent: {}
+[4.027432] (-) TimerEvent: {}
+[4.128094] (-) TimerEvent: {}
+[4.228716] (-) TimerEvent: {}
+[4.329390] (-) TimerEvent: {}
+[4.430009] (-) TimerEvent: {}
+[4.530659] (-) TimerEvent: {}
+[4.631279] (-) TimerEvent: {}
+[4.731919] (-) TimerEvent: {}
+[4.778534] (robot_nav) StdoutLine: {'line': b'running develop\n'}
+[4.832097] (-) TimerEvent: {}
+[4.932825] (-) TimerEvent: {}
+[5.033489] (-) TimerEvent: {}
+[5.134137] (-) TimerEvent: {}
+[5.234822] (-) TimerEvent: {}
+[5.335619] (-) TimerEvent: {}
+[5.436975] (-) TimerEvent: {}
+[5.537590] (-) TimerEvent: {}
+[5.638235] (-) TimerEvent: {}
+[5.738887] (-) TimerEvent: {}
+[5.839580] (-) TimerEvent: {}
+[5.880027] (robot_nav) StdoutLine: {'line': b'Removing /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot-nav.egg-link (link to .)\n'}
+[5.939887] (-) TimerEvent: {}
+[6.026574] (robot_nav) CommandEnded: {'returncode': 0}
+[6.030867] (robot_nav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_nav', 'build', '--build-base', '/home/rubiores/Documents/PAE/build/robot_nav/build', 'install', '--record', '/home/rubiores/Documents/PAE/build/robot_nav/install.log', '--single-version-externally-managed', 'install_data', '--force'], 'cwd': '/home/rubiores/Documents/PAE/src/robot_nav', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rubiores', 'SSH_CLIENT': '192.168.1.3 60003 22', 'LC_TIME': 'es_CO.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/rubiores', 'OLDPWD': '/home/rubiores', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'es_CO.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rubiores/Documents/PAE/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'rubiores', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/rubiores/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'es_CO.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'es_CO.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/rubiores/Documents/PAE/install/robot_nav:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_CO.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_CO.UTF-8', 'LC_IDENTIFICATION': 'es_CO.UTF-8', 'PWD': '/home/rubiores/Documents/PAE/build/robot_nav', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.3 60003 192.168.1.9 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rubiores/Documents/PAE/build/robot_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages:/home/rubiores/Documents/PAE/build/robot_nav:/home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_CO.UTF-8', 'LC_PAPER': 'es_CO.UTF-8', 'COLCON': '1'}, 'shell': False}
+[6.039999] (-) TimerEvent: {}
+[6.141266] (-) TimerEvent: {}
+[6.241928] (-) TimerEvent: {}
+[6.342602] (-) TimerEvent: {}
+[6.443298] (-) TimerEvent: {}
+[6.543902] (-) TimerEvent: {}
+[6.644501] (-) TimerEvent: {}
+[6.745131] (-) TimerEvent: {}
+[6.845721] (-) TimerEvent: {}
+[6.946338] (-) TimerEvent: {}
+[7.047048] (-) TimerEvent: {}
+[7.147894] (-) TimerEvent: {}
+[7.248551] (-) TimerEvent: {}
+[7.349231] (-) TimerEvent: {}
+[7.373884] (robot_nav) StdoutLine: {'line': b'running egg_info\n'}
+[7.376812] (robot_nav) StdoutLine: {'line': b'writing ../../build/robot_nav/robot_nav.egg-info/PKG-INFO\n'}
+[7.377922] (robot_nav) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_nav/robot_nav.egg-info/dependency_links.txt\n'}
+[7.378946] (robot_nav) StdoutLine: {'line': b'writing entry points to ../../build/robot_nav/robot_nav.egg-info/entry_points.txt\n'}
+[7.380034] (robot_nav) StdoutLine: {'line': b'writing requirements to ../../build/robot_nav/robot_nav.egg-info/requires.txt\n'}
+[7.380776] (robot_nav) StdoutLine: {'line': b'writing top-level names to ../../build/robot_nav/robot_nav.egg-info/top_level.txt\n'}
+[7.390419] (robot_nav) StdoutLine: {'line': b"reading manifest file '../../build/robot_nav/robot_nav.egg-info/SOURCES.txt'\n"}
+[7.395715] (robot_nav) StdoutLine: {'line': b"writing manifest file '../../build/robot_nav/robot_nav.egg-info/SOURCES.txt'\n"}
+[7.396418] (robot_nav) StdoutLine: {'line': b'running build\n'}
+[7.396831] (robot_nav) StdoutLine: {'line': b'running build_py\n'}
+[7.397358] (robot_nav) StdoutLine: {'line': b'creating /home/rubiores/Documents/PAE/build/robot_nav/build\n'}
+[7.397979] (robot_nav) StdoutLine: {'line': b'creating /home/rubiores/Documents/PAE/build/robot_nav/build/lib\n'}
+[7.398471] (robot_nav) StdoutLine: {'line': b'creating /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav\n'}
+[7.398897] (robot_nav) StdoutLine: {'line': b'copying robot_nav/teleop_keyboard.py -> /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav\n'}
+[7.399356] (robot_nav) StdoutLine: {'line': b'copying robot_nav/motor_controller.py -> /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav\n'}
+[7.399790] (robot_nav) StdoutLine: {'line': b'copying robot_nav/__init__.py -> /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav\n'}
+[7.400468] (robot_nav) StdoutLine: {'line': b'copying robot_nav/simple_nav.py -> /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav\n'}
+[7.401222] (robot_nav) StdoutLine: {'line': b'copying robot_nav/pico_bridge.py -> /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav\n'}
+[7.402479] (robot_nav) StdoutLine: {'line': b'running install\n'}
+[7.403780] (robot_nav) StdoutLine: {'line': b'running install_lib\n'}
+[7.407746] (robot_nav) StdoutLine: {'line': b'creating /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav\n'}
+[7.408410] (robot_nav) StdoutLine: {'line': b'copying /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav/teleop_keyboard.py -> /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav\n'}
+[7.409147] (robot_nav) StdoutLine: {'line': b'copying /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav/motor_controller.py -> /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav\n'}
+[7.409939] (robot_nav) StdoutLine: {'line': b'copying /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav/__init__.py -> /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav\n'}
+[7.410626] (robot_nav) StdoutLine: {'line': b'copying /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav/simple_nav.py -> /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav\n'}
+[7.411397] (robot_nav) StdoutLine: {'line': b'copying /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav/pico_bridge.py -> /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav\n'}
+[7.414211] (robot_nav) StdoutLine: {'line': b'byte-compiling /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav/teleop_keyboard.py to teleop_keyboard.cpython-310.pyc\n'}
+[7.417014] (robot_nav) StdoutLine: {'line': b'byte-compiling /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav/motor_controller.py to motor_controller.cpython-310.pyc\n'}
+[7.419649] (robot_nav) StdoutLine: {'line': b'byte-compiling /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav/__init__.py to __init__.cpython-310.pyc\n'}
+[7.420837] (robot_nav) StdoutLine: {'line': b'byte-compiling /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav/simple_nav.py to simple_nav.cpython-310.pyc\n'}
+[7.423233] (robot_nav) StdoutLine: {'line': b'byte-compiling /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav/pico_bridge.py to pico_bridge.cpython-310.pyc\n'}
+[7.429377] (robot_nav) StdoutLine: {'line': b'running install_data\n'}
+[7.430023] (robot_nav) StdoutLine: {'line': b'copying resource/robot_nav -> /home/rubiores/Documents/PAE/install/robot_nav/share/ament_index/resource_index/packages\n'}
+[7.430734] (robot_nav) StdoutLine: {'line': b'copying package.xml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav\n'}
+[7.431556] (robot_nav) StdoutLine: {'line': b'copying launch/localization.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch\n'}
+[7.432513] (robot_nav) StdoutLine: {'line': b'copying launch/slam.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch\n'}
+[7.433299] (robot_nav) StdoutLine: {'line': b'copying launch/motor_controller.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch\n'}
+[7.434136] (robot_nav) StdoutLine: {'line': b'copying launch/lidar.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch\n'}
+[7.434898] (robot_nav) StdoutLine: {'line': b'copying launch/bringup.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch\n'}
+[7.435732] (robot_nav) StdoutLine: {'line': b'copying launch/pico_bridge.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch\n'}
+[7.436624] (robot_nav) StdoutLine: {'line': b'copying launch/description.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch\n'}
+[7.437631] (robot_nav) StdoutLine: {'line': b'copying launch/navigation.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch\n'}
+[7.438520] (robot_nav) StdoutLine: {'line': b'copying launch/teleop.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch\n'}
+[7.439423] (robot_nav) StdoutLine: {'line': b'copying urdf/robot.urdf.xacro -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/urdf\n'}
+[7.440440] (robot_nav) StdoutLine: {'line': b'copying config/localization_params.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config\n'}
+[7.442143] (robot_nav) StdoutLine: {'line': b'copying config/nav2_params.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config\n'}
+[7.443005] (robot_nav) StdoutLine: {'line': b'copying config/mapper_params.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config\n'}
+[7.444495] (robot_nav) StdoutLine: {'line': b'copying config/rviz_config.rviz -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config\n'}
+[7.445352] (robot_nav) StdoutLine: {'line': b'copying config/robot_control.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config\n'}
+[7.446569] (robot_nav) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.449365] (-) TimerEvent: {}
+[7.453920] (robot_nav) StdoutLine: {'line': b'Copying ../../build/robot_nav/robot_nav.egg-info to /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav-0.0.0-py3.10.egg-info\n'}
+[7.459309] (robot_nav) StdoutLine: {'line': b'running install_scripts\n'}
+[7.549418] (robot_nav) StdoutLine: {'line': b'Installing lidar_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[7.550043] (-) TimerEvent: {}
+[7.550597] (robot_nav) StdoutLine: {'line': b'Installing motor_controller script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[7.551770] (robot_nav) StdoutLine: {'line': b'Installing pico_bridge script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[7.552849] (robot_nav) StdoutLine: {'line': b'Installing pico_odom_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[7.553841] (robot_nav) StdoutLine: {'line': b'Installing teleop_keyboard script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav\n'}
+[7.555996] (robot_nav) StdoutLine: {'line': b"writing list of installed files to '/home/rubiores/Documents/PAE/build/robot_nav/install.log'\n"}
+[7.650399] (-) TimerEvent: {}
+[7.689295] (robot_nav) CommandEnded: {'returncode': 0}
+[7.749910] (robot_nav) JobEnded: {'identifier': 'robot_nav', 'rc': 0}
+[7.753411] (-) TimerEvent: {}
+[7.753831] (-) EventReactorShutdown: {}

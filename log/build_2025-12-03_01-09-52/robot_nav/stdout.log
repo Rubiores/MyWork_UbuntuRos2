@@ -1,0 +1,60 @@
+running develop
+Removing /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot-nav.egg-link (link to .)
+running egg_info
+writing ../../build/robot_nav/robot_nav.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_nav/robot_nav.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_nav/robot_nav.egg-info/entry_points.txt
+writing requirements to ../../build/robot_nav/robot_nav.egg-info/requires.txt
+writing top-level names to ../../build/robot_nav/robot_nav.egg-info/top_level.txt
+reading manifest file '../../build/robot_nav/robot_nav.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_nav/robot_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rubiores/Documents/PAE/build/robot_nav/build
+creating /home/rubiores/Documents/PAE/build/robot_nav/build/lib
+creating /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav
+copying robot_nav/teleop_keyboard.py -> /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav
+copying robot_nav/motor_controller.py -> /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav
+copying robot_nav/__init__.py -> /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav
+copying robot_nav/simple_nav.py -> /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav
+copying robot_nav/pico_bridge.py -> /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav
+running install
+running install_lib
+creating /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav
+copying /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav/teleop_keyboard.py -> /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav
+copying /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav/motor_controller.py -> /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav
+copying /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav/__init__.py -> /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav
+copying /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav/simple_nav.py -> /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav
+copying /home/rubiores/Documents/PAE/build/robot_nav/build/lib/robot_nav/pico_bridge.py -> /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav
+byte-compiling /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav/teleop_keyboard.py to teleop_keyboard.cpython-310.pyc
+byte-compiling /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav/motor_controller.py to motor_controller.cpython-310.pyc
+byte-compiling /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav/simple_nav.py to simple_nav.cpython-310.pyc
+byte-compiling /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav/pico_bridge.py to pico_bridge.cpython-310.pyc
+running install_data
+copying resource/robot_nav -> /home/rubiores/Documents/PAE/install/robot_nav/share/ament_index/resource_index/packages
+copying package.xml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav
+copying launch/localization.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+copying launch/slam.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+copying launch/motor_controller.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+copying launch/lidar.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+copying launch/bringup.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+copying launch/pico_bridge.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+copying launch/description.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+copying launch/navigation.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+copying launch/teleop.launch.py -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/launch
+copying urdf/robot.urdf.xacro -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/urdf
+copying config/localization_params.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+copying config/nav2_params.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+copying config/mapper_params.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+copying config/rviz_config.rviz -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+copying config/robot_control.yaml -> /home/rubiores/Documents/PAE/install/robot_nav/share/robot_nav/config
+running install_egg_info
+Copying ../../build/robot_nav/robot_nav.egg-info to /home/rubiores/Documents/PAE/install/robot_nav/lib/python3.10/site-packages/robot_nav-0.0.0-py3.10.egg-info
+running install_scripts
+Installing lidar_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+Installing motor_controller script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+Installing pico_bridge script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+Installing pico_odom_node script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+Installing teleop_keyboard script to /home/rubiores/Documents/PAE/install/robot_nav/lib/robot_nav
+writing list of installed files to '/home/rubiores/Documents/PAE/build/robot_nav/install.log'

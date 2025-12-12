@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rubio_bot">
+
+  <!-- ========================= -->
+  <!--     PROPIEDADES GLOBALES -->
+  <!-- ========================= -->
+  <xacro:property name="wheel_radius" value="0.0325"/>      <!-- 3.2 cm -->
+  <xacro:property name="wheel_separation" value="0.239"/>   <!-- distancia entre ruedas -->
+  <xacro:property name="base_height" value="0.05"/>        <!-- altura base -->
+  <xacro:property name="caster_radius" value="0.02"/>
+  <xacro:property name="lidar_height" value="0.08"/>
+
+
+  <!-- ========================= -->
+  <!--          BASE_LINK        -->
+  <!-- ========================= -->
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 ${base_height}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.11" length="0.02"/>
+      </geometry>
+      <material name="red">
+        <color rgba="0.8 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 ${base_height}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.11" length="0.02"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.01" iyy="0.01" izz="0.01"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- ========================= -->
+  <!--       RUEDA IZQUIERDA     -->
+  <!-- ========================= -->
+
+  <link name="left_wheel">
+    <visual>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="0.02"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="0.02"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" iyy="0.001" izz="0.001"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <joint name="left_wheel_joint" type="continuous">
+    <origin xyz="0 ${wheel_separation / 2} ${base_height}" rpy="1.5708 0 0"/>
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <axis xyz="0 0 -1"/>
+  </joint>
+
+  <!-- ========================= -->
+  <!--       RUEDA DERECHA       -->
+  <!-- ========================= -->
+
+  <link name="right_wheel">
+    <visual>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="0.02"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="0.02"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" iyy="0.001" izz="0.001"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <joint name="right_wheel_joint" type="continuous">
+    <origin xyz="0 ${-wheel_separation / 2} ${base_height}" rpy="1.5708 0 0"/>
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+
+  <!-- ========================= -->
+  <!--       CASTER FRONTAL      -->
+  <!-- ========================= -->
+
+  <link name="front_caster">
+    <visual>
+      <geometry>
+        <sphere radius="${caster_radius}"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="front_caster_joint" type="fixed">
+    <origin xyz="0.09 0 ${caster_radius}" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="front_caster"/>
+  </joint>
+
+
+  <!-- ========================= -->
+  <!--        CASTER TRASERO     -->
+  <!-- ========================= -->
+
+  <link name="rear_caster">
+    <visual>
+      <geometry>
+        <sphere radius="${caster_radius}"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="rear_caster_joint" type="fixed">
+    <origin xyz="-0.09 0 ${caster_radius}" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="rear_caster"/>
+  </joint>
+
+
+  <!-- ========================= -->
+  <!--            LIDAR          -->
+  <!-- ========================= -->
+
+  <link name="lidar_link">
+    <visual>
+      <origin xyz="0 0 ${lidar_height}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.03" length="0.03"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="lidar_joint" type="fixed">
+    <origin xyz="0 0 -0.005" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+  </joint>
+
+
+  <!-- ========================= -->
+  <!--    ros2_control + joints  -->
+  <!-- ========================= -->
+
+  <!-- Transmission left -->
+  <transmission name="left_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_wheel_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="left_actuator">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <!-- Transmission right -->
+  <transmission name="right_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_wheel_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="right_actuator">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+  <!-- ros2_control interface placeholder -->
+  <ros2_control name="rubio_hw">
+    <hardware>
+      <plugin>robot_nav.pico_hardware_interface:PicoSystem</plugin>
+    </hardware>
+
+    <joint name="left_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+</robot>
