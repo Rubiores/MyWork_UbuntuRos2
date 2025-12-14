@@ -17,7 +17,7 @@ slam_toolbox:
     mode: localization
 
     # MAPA A CARGAR
-    map_file_name: /home/rubiores/Documents/PAE/lab_1
+    map_file_name: /home/rubiores/Documents/PAE/map/lab_1
 
     # INICIAR EN ORIGEN DEL MAPA
     map_start_pose: [0.0, 0.0, 0.0]

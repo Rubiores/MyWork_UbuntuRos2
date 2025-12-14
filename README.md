@@ -65,8 +65,46 @@ El proyecto nace como parte del PAE – Desarrollo de un robot móvil capaz de n
 
 * Crear nodos para control avanzado y navegación.
 
+
+## 🧩 Control base del robot
+
+El movimiento básico del robot no depende de SLAM, localización ni navegación. El control directo se realiza mediante el nodo:
+
+``
+pico_bridge.py
+``
+Este nodo:
+
+* Publica la odometría (/odom)
+
+* Envía comandos de velocidad (/cmd_vel) al microcontrolador
+
+Para ejecutar únicamente esta capa base del sistema:
+
+```md
+ros2 launch robot_nav bridge.launch.py
+```
+
+### 🕹️ Teleoperación del robot
+
+Una vez ejecutado bridge.launch.py, el robot puede ser controlado manualmente mediante teclado:
+
+```md
+ros2 run teleop_twist_keyboard teleop_twist_keyboard \
+  --ros-args -p speed:=0.4 -p turn:=2.85
+```
+
+Este comando permite validar:
+
+* Respuesta de los motores
+
+* Funcionamiento del PID en el microcontrolador
+
+* Publicación correcta de /cmd_vel y /odom
+
+Este modo permite mover el robot y validar el control sin ejecutar SLAM ni AMCL.
  
-## Launch Files Principales
+## Launch Files Principales (paquete robot_nav)
 ### 🗺️ 1. SLAM Launch
 
 **Archivo**: slam_launch.py
@@ -79,7 +117,7 @@ El proyecto nace como parte del PAE – Desarrollo de un robot móvil capaz de n
 
 Uso:
 ```md
-ros2 launch robot_nav slam_launch.py
+ros2 launch robot_nav slam.launch.py
 ```
 
 ### 📍 2. Localization Launch
@@ -92,13 +130,13 @@ Ejecuta AMCL para localización.
 
 Uso:
 ```md
-ros2 launch robot_nav localization_launch.py
+ros2 launch robot_nav localization.launch.py
 ```
 
 ### 🧭 3. Navigation Launch (Preparando para TDG)
 
 ```md
-ros2 launch robot_nav nav_launch.py
+ros2 launch robot_nav nav.launch.py
 ```
 
 ⚠️ Este launch está documentado y organizado, pero la navegación aún no está correctamente implementada.
@@ -117,7 +155,69 @@ Está previsto que sea funcional para la fase inicial del TDG.
 
 <p align="center"> <img src="images/localization.jpeg" alt="Localización con AMCL" width="70%"> </p>
 
+
+## 📁 Estructura del Repositorio
+
+```md
+MyWork_UbuntuRos2/
+│
+├── build/ 
+├── install/ 
+├── log/ 
+├── map/
+├── src/
+│ └── robot_nav/
+│ ├── launch/
+│ ├── config/
+│ ├── urdf/
+│ ├── rviz/
+│ └── scripts/
+│
+├── images/
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+
 ## 🔧 Instalación y Uso
+
+### Requisitos
+
+* Ubuntu 22.04 LTS
+
+* ROS 2 Humble Hawksbill
+
+* RPLIDAR A1
+
+### Instalación de dependencias principales
+
+En este proyecto, ROS 2 Humble fue instalado directamente desde los repositorios oficiales mediante apt, sin configuraciones adicionales
+
+```md
+sudo apt update
+sudo apt install -y ros-humble-desktop
+```
+
+Configurar el entorno de ROS 2:
+
+```md
+source /opt/ros/humble/setup.bash
+```
+
+#### Instalación de dependencias principales
+
+```md
+sudo apt install -y \
+ros-humble-slam-toolbox \
+ros-humble-amcl \
+ros-humble-nav2-bringup \
+ros-humble-rplidar-ros \
+ros-humble-teleop-twist-keyboard \
+ros-humble-xacro \
+ros-humble-rviz2
+```
+
 ### 1️⃣ Clonar el repositorio
 ```md
 git clone https://github.com/Rubiores/MyWork_UbuntuRos2.git
@@ -135,4 +235,15 @@ ros2 launch robot_nav slam_launch.py
 ros2 launch robot_nav localization_launch.py
 ```
 
+## 👤 Autor
+
+**Alejandro Rubio Salas**
+
+Semillero de Investigación SICORA
+
+Universidad Nacional de Colombia – Sede La Paz
+
+## 📌 Licencia
+
+Uso libre para fines académicos y de investigación.
 

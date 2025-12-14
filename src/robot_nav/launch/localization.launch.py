@@ -14,12 +14,12 @@ def generate_launch_description():
 
     pkg_share = FindPackageShare('robot_nav').find('robot_nav')
 
-    # Ruta al URDF (aseg�rate de que este archivo exista)
+    # Ruta al URDF (asegurate de que este archivo exista)
     urdf_path = PathJoinSubstitution([pkg_share, 'urdf', 'robot.urdf.xacro'])
 
     return LaunchDescription([
 
-        # --- 1. Nodo pico_bridge (control + odometr�a + joint_states)
+        # --- 1. Nodo pico_bridge (control + odometria + joint_states)
         Node(
             package='robot_nav',
             executable='pico_bridge',
