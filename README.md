@@ -147,6 +147,29 @@ Está previsto que sea funcional para la fase inicial del TDG.
 
 
 ## 🧪 Resultados y Evidencias
+
+### 🧱 Modelo mecánico y descripción del robot (CAD y URDF)
+
+El diseño del robot se desarrolló inicialmente mediante modelado CAD, el cual sirvió como base para la posterior construcción del modelo URDF/XACRO utilizado en ROS 2.
+
+El URDF permite:
+
+Visualizar correctamente el robot en RViz2
+
+Definir la estructura cinemática
+
+Establecer las transformaciones TF entre enlaces
+
+Integrar sensores como el LiDAR
+
+#### 🧩 Diseño CAD del robot
+
+<p align="center"> <img src="images/Robot_movil.png" alt="Mapa generado con SLAM" width="50%"> </p>
+
+#### 🤖 Modelo URDF visualizado en RViz2
+
+<p align="center"> <img src="images/urdf.png" alt="Mapa generado con SLAM" width="50%"> </p>
+
 ### 🗺️ Mapa generado con SLAM
 
 <p align="center"> <img src="images/slam.png" alt="Mapa generado con SLAM" width="70%"> </p>

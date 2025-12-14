@@ -17,20 +17,20 @@ def generate_launch_description():
     map_yaml = PathJoinSubstitution([pkg_share, "map", "three_map.yaml"])
     rviz_config = PathJoinSubstitution([pkg_share, "rviz", "nav2_navigation.rviz"])
 
-    # --- 2. Incluir la localización que ya funciona ---
+    # --- 2. Incluir la localizaciï¿½n que ya funciona ---
     localization_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([pkg_share, "launch", "localization.launch.py"])
         )
     )
 
-    # --- 3. Nav2 Nodos mínimos ---
+    # --- 3. Nav2 Nodos mï¿½nimos ---
     map_server = Node(
         package="nav2_map_server",
         executable="map_server",
         name="map_server",
         output="screen",
-        parameters=[{"yaml_filename": 'lab_1.yaml'}]
+        parameters=[{"yaml_filename": 'three_map.yaml'}]
     )
 
     amcl = Node(
@@ -83,7 +83,7 @@ def generate_launch_description():
         }]
     )
     
-    # --- 4. RViz con herramienta de navegación ---
+    # --- 4. RViz con herramienta de navegaciï¿½n ---
     rviz2 = Node(
         package="rviz2",
         executable="rviz2",
